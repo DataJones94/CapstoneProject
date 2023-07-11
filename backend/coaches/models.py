@@ -6,3 +6,7 @@ from authentication.models import User
 class Coach(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length= 255)
+    workout = models.CharField(max_length=255)
+    messages = models.CharField(max_length=255)
+    template = models.CharField(max_length=255)
+    
