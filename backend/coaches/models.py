@@ -6,6 +6,8 @@ from authentication.models import User
 class Coach(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length= 255)
-    workout = models.CharField(max_length=255, blank=True, null=True)
-    template = models.CharField(max_length=255, blank=True, null=True)
+    workout = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
     
+
+    #I want the coach to be able to have a name, and
+    # to be able to access the workouts

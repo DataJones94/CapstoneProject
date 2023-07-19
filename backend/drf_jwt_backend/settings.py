@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'workouts',
     'exercises',
     'posts',
+    'placements'
        # This app is for example use only
 ]
 
