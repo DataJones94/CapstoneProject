@@ -1,6 +1,6 @@
 from django.db import models
 from authentication.models import User
-from Placement import Placement
+from placements import Placement
 
 
 # Create your models here.
